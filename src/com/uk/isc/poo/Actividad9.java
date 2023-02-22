@@ -14,7 +14,11 @@ public class Actividad9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        CuentaBancaria c1 = new CuentaBancaria(41520052, "Susana", 10000);
+        System.out.printf("Nombre del Cliente: %s\nSaldo: %d\n\n", c1.getNombreCliente(), c1.getSaldo());
+        c1.setNombreCliente("Alfredo");
+        c1.setSaldo(5000);
+        System.out.printf("Nombre del Cliente: %s\nSaldo: %d\n\n", c1.getNombreCliente(), c1.getSaldo());
     }
     
 }
